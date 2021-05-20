@@ -14,6 +14,7 @@ namespace Exercise6
             {
                 array[i] = random.Next(100);
             }
+
             return array;
         }
 
