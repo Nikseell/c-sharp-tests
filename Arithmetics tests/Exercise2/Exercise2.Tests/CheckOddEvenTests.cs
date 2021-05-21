@@ -13,7 +13,7 @@ namespace Exercise2.Tests
         }
 
         [TestMethod]
-        public void ArgumentI4_ReturnsTrue()
+        public void EvenOrOdd_ArgumentI4_ReturnsTrue()
         {
             // Act
             var result = _target.EvenOrOdd(4);
@@ -23,7 +23,7 @@ namespace Exercise2.Tests
         }
 
         [TestMethod]
-        public void ArgumentI5_ReturnsFalse()
+        public void EvenOrOdd_ArgumentI5_ReturnsFalse()
         {
             // Act
             var result = _target.EvenOrOdd(5);
