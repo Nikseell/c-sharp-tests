@@ -13,7 +13,7 @@ namespace Exercise10.Tests
         }
 
         [TestMethod]
-        public void AreaOfCircleNegativeNumber()
+        public void AreaOfCircle_ArgumentIsNegativeNumber_Returns0()
         {
             // Act
             var result = _target.AreaOfCircle(-4);
@@ -23,7 +23,7 @@ namespace Exercise10.Tests
         }
 
         [TestMethod]
-        public void AreaOfRectangleNegativeNumber()
+        public void AreaOfRectangle_ArgumentsAreNegativeNumbers_Returns0()
         {
             // Act
             var result = _target.AreaOfRectangle(-4, -2);
@@ -33,7 +33,7 @@ namespace Exercise10.Tests
         }
 
         [TestMethod]
-        public void AreaOfTriangleNegativeNumber()
+        public void AreaOfTriangle_ArgumentsAreNegativeNumbers_Returns0()
         {
             // Act
             var result = _target.AreaOfTriangle(-3, -6);
@@ -43,7 +43,7 @@ namespace Exercise10.Tests
         }
 
         [TestMethod]
-        public void AreaOfCirclePositiveNumber()
+        public void AreaOfCircle_ArgumentIsPositiveNumber_ReturnsResult()
         {
             // Act
             var result = _target.AreaOfCircle(3);
@@ -53,7 +53,7 @@ namespace Exercise10.Tests
         }
 
         [TestMethod]
-        public void AreaOfRectanglePositiveNumbers()
+        public void AreaOfRectangle_ArgumentsArePositiveNumbers_ReturnsResult()
         {
             // Act
             var result = _target.AreaOfRectangle(4, 5);
@@ -63,7 +63,7 @@ namespace Exercise10.Tests
         }
 
         [TestMethod]
-        public void AreaOfTrianglePositiveNumbers()
+        public void AreaOfTriangle_ArgumentsArePositiveNumbers_ReturnsResult()
         {
             // Act
             var result = _target.AreaOfTriangle(4, 2);

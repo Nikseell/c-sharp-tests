@@ -14,7 +14,7 @@ namespace Exercise6.Tests
         }
 
         [TestMethod]
-        public void ArgumentX10()
+        public void GravityCalculatorFormula_ArgumentX10_ReturnsResult()
         {
             // Act
             var result = _target.GravityCalculatorFormula(10.0);
@@ -24,7 +24,7 @@ namespace Exercise6.Tests
         }
 
         [TestMethod]
-        public void ArgumentXNegative()
+        public void GravityCalculatorFormula_ArgumentXNegative_Returns0()
         {
             // Act
             var result = _target.GravityCalculatorFormula(-4);
@@ -34,7 +34,7 @@ namespace Exercise6.Tests
         }
 
         [TestMethod]
-        public void ArgumentX0()
+        public void GravityCalculatorFormula_ArgumentX0_Returns0()
         {
             // Act
             var result = _target.GravityCalculatorFormula(0);

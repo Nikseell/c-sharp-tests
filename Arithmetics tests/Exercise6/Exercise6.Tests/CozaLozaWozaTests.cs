@@ -13,7 +13,7 @@ namespace Exercise6.Tests
         }
 
         [TestMethod]
-        public void ArgumentY3_ReturnsCoza()
+        public void CozaLozaWozaProgram_ArgumentY3_ReturnsCoza()
         {
             // Act
             var result = _target.CozaLozaWozaProgram(3);
@@ -23,7 +23,7 @@ namespace Exercise6.Tests
         }
 
         [TestMethod]
-        public void ArgumentY5_ReturnsLoza()
+        public void CozaLozaWozaProgram_ArgumentY5_ReturnsLoza()
         {
             // Act
             var result = _target.CozaLozaWozaProgram(5);
@@ -33,7 +33,7 @@ namespace Exercise6.Tests
         }
 
         [TestMethod]
-        public void ArgumentY7_ReturnsWoza()
+        public void CozaLozaWozaProgram_ArgumentY7_ReturnsWoza()
         {
             // Act
             var result = _target.CozaLozaWozaProgram(7);
@@ -43,7 +43,7 @@ namespace Exercise6.Tests
         }
 
         [TestMethod]
-        public void ArgumentY1_ReturnsNumber()
+        public void CozaLozaWozaProgram_ArgumentY1_ReturnsNumber()
         {
             // Act
             var result = _target.CozaLozaWozaProgram(1);
@@ -53,7 +53,7 @@ namespace Exercise6.Tests
         }
 
         [TestMethod]
-        public void ArgumentY1_ReturnsCozaWoza()
+        public void CozaLozaWozaProgram_ArgumentY1_ReturnsCozaWoza()
         {
             // Act
             var result1 = _target.CozaLozaWozaProgram(3);
@@ -65,7 +65,7 @@ namespace Exercise6.Tests
         }
 
         [TestMethod]
-        public void ArgumentYOverLimit_ReturnsNull()
+        public void CozaLozaWozaProgram_ArgumentYOverLimit_ReturnsNull()
         {
             // Act
             var result = _target.CozaLozaWozaProgram(111);

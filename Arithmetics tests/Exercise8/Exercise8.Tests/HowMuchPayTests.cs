@@ -13,7 +13,7 @@ namespace Exercise8.Tests
         }
 
         [TestMethod]
-        public void BasePayUnderMinimumWage()
+        public void SalaryCalc_BasePayUnderMinimumWage_Returns0()
         {
             // Act
             var result = _target.SalaryCalc(7.50, 35);
@@ -23,7 +23,7 @@ namespace Exercise8.Tests
         }
 
         [TestMethod]
-        public void MaximumHoursWorked()
+        public void SalaryCalc_HoursWorkedOverMaximum_Returns0()
         {
             // Act
             var result = _target.SalaryCalc(7.50, 61);
@@ -33,7 +33,7 @@ namespace Exercise8.Tests
         }
 
         [TestMethod]
-        public void BasePayNegative()
+        public void SalaryCalc_BasePayNegative_Returns0()
         {
             // Act
             var result = _target.SalaryCalc(-2, 40);
@@ -43,7 +43,7 @@ namespace Exercise8.Tests
         }
 
         [TestMethod]
-        public void HoursWorkedNegative()
+        public void SalaryCalc_HoursWorkedNegative_Returns0()
         {
             // Act
             var result = _target.SalaryCalc(8.5, -30);
@@ -53,7 +53,7 @@ namespace Exercise8.Tests
         }
 
         [TestMethod]
-        public void BasePayCorrectAndHoursWorkedOver40Hours()
+        public void SalaryCalc_BasePayOverMinimumAndHoursWorkedOver40_ReturnsTotalSalary()
         {
             // Act
             var result = _target.SalaryCalc(8.20, 47);
@@ -63,7 +63,7 @@ namespace Exercise8.Tests
         }
 
         [TestMethod]
-        public void BasePayCorrectAndHoursWorkedUnder40()
+        public void SalaryCalc_BasePayOverMinimumAndHoursWorkedUnder40_ReturnsTotalSalary()
         {
             // Act
             var result = _target.SalaryCalc(9.6, 30);

@@ -19,18 +19,16 @@ namespace Exercise8
             {
                 return 0;
             }
+            else if (hoursWorked > 40)
+            {
+                totalSalary = basePay * 40 + 1.5 * basePay * (hoursWorked - 40);
+            }
             else
             {
-                if (hoursWorked > 40)
-                {
-                    totalSalary = basePay * 40 + 1.5 * basePay * (hoursWorked - 40);
-                }
-                else
-                {
-                    totalSalary = basePay * hoursWorked;
-                }
-                return totalSalary;
+                totalSalary = basePay * hoursWorked;
             }
+
+            return totalSalary;
         }
     }
 }
