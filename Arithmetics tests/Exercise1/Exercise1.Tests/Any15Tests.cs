@@ -13,7 +13,7 @@ namespace Exercise1.Tests
             _target = new Any15();
         }
         [TestMethod]
-        public void ArgumentX15_ReturnsTrue()
+        public void Has15_ArgumentX15Y5_ReturnsTrue()
         {
             // Act
             var result = _target.Has15(15, 5);
@@ -23,17 +23,17 @@ namespace Exercise1.Tests
         }
 
         [TestMethod]
-        public void ArgumentY15_ReturnsTrue()
+        public void Has15_ArgumentX5Y15_ReturnsTrue()
         {
             // Act
-            var result = _target.Has15(15, 5);
+            var result = _target.Has15(5, 15);
 
             // Assert
             Assert.AreEqual(true, result);
         }
 
         [TestMethod]
-        public void ArgumentWithoutAny15Given_ReturnsFalse()
+        public void Has15_ArgumentWithoutAny15Given_ReturnsFalse()
         {
             //Act
             var result = _target.Has15(5, 5);
@@ -43,7 +43,7 @@ namespace Exercise1.Tests
         }
 
         [TestMethod]
-        public void ArgumentX20Difference_ReturnsTrue()
+        public void Has15_ArgumentX20Y5Difference_ReturnsTrue()
         {
             //Act
             var result = _target.Has15(20, 5);
