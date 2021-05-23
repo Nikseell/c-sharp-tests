@@ -82,7 +82,7 @@ namespace Exercise9.Tests
         }
 
         [TestMethod]
-        public void PrintOut_ReturnsAllNumbers()
+        public void PrintOut_CorrectNumber_ReturnsAllNumbers()
         {
             // Act
             _target.PutNumber("Paul", "61323436");

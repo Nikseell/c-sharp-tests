@@ -33,7 +33,7 @@ namespace Exercise8.Tests
         }
 
         [TestMethod]
-        public void GetGradeCount_GradeFromTo_Returns()
+        public void GetGradeCount_GradeFromTo_ReturnsGradeCount()
         {
             // Act
             var result = _target.GetGradeCount(60, 69);

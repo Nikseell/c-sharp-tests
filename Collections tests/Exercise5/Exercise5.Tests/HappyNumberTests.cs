@@ -14,7 +14,7 @@ namespace Exercise5.Tests
         }
 
         [TestMethod]
-        public void CorrectlyMakesNumbersIntoDigets()
+        public void ToDigets_139_ReturnsListWithInt()
         {
             // Act
             var result = _target.ToDigets(139);
@@ -25,7 +25,7 @@ namespace Exercise5.Tests
         }
 
         [TestMethod]
-        public void CorrectlyMakesNumberIntoDigets()
+        public void ToDigets_4_ReturnsListWithInt()
         {
             // Act
             var result = _target.ToDigets(4);
@@ -36,7 +36,7 @@ namespace Exercise5.Tests
         }
 
         [TestMethod]
-        public void FormulaIsCorrect()
+        public void Calc_139_ReturnsCorrectResult()
         {
             // Act
             var res = new List<int> { 1, 3, 9 };
@@ -47,7 +47,7 @@ namespace Exercise5.Tests
         }
 
         [TestMethod]
-        public void HappyNumber()
+        public void IsHappy_139_ReturnsHappyNumber()
         {
             // Act
             var result = _target.IsHappy(139);
@@ -57,7 +57,7 @@ namespace Exercise5.Tests
         }
 
         [TestMethod]
-        public void NotHappyNumber()
+        public void IsHappy_4_ReturnsNotHappyNumber()
         {
             // Act
             var result = _target.IsHappy(4);

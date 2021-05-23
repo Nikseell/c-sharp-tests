@@ -30,6 +30,7 @@ namespace Exercise6
             {
                 textWords += line;
             }
+
             char[] charArr = textWords.ToCharArray();
 
             return charArr.Length;

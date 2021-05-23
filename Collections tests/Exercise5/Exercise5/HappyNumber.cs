@@ -24,14 +24,7 @@ namespace Exercise5
                 }
             }
 
-            if (res == 1)
-            {
-                return "Happy number!";
-            }
-            else
-            {
-                return "Not happy!";
-            }
+            return res == 1 ? "Happy number!" : "Not happy!";
 
         }
 
